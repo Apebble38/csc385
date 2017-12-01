@@ -241,7 +241,6 @@ public class Algorithm1Test {
 
 
         actual = runWithTestParamAlg1(p,c,i);
-        assertEquals();
         assertEquals(expected,actual);
     }
 
