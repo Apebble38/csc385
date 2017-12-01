@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CSC385assignment6.iml" filepath="$PROJECT_DIR$/.idea/modules/CSC385assignment6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSC385assignment6.iml" filepath="$PROJECT_DIR$/CSC385assignment6.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CSC385assignment6_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CSC385assignment6_main.iml" group="CSC385assignment6" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CSC385assignment6_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CSC385assignment6_test.iml" group="CSC385assignment6" />
     </modules>

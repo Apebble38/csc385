@@ -11,7 +11,7 @@ package assignment6;
 public class Algorithm3 extends JosephusCircle {
 
 	/**
-	 * @see JosephusCircle 
+	 * @see JosephusCircle
 	 */
 	public Algorithm3(int p, int c, int i) {
 		super(p, c, i);
@@ -23,7 +23,7 @@ public class Algorithm3 extends JosephusCircle {
 	@Override
 	public int algorithm() {
 		this.lastManStanding = 1 + ((soldiers - 1) * count) % soldiers;
-		return this.lastManStanding; 
+		return this.lastManStanding;
 	}
 
 }

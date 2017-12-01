@@ -59,6 +59,9 @@ public abstract class JosephusCircle implements Runnable {
 	 */
 	public JosephusCircle(int p, int c, int i) {
 		this.soldiers     = Math.abs(p);
+//		System.out.println(p);
+//		System.out.println(Math.abs(p));
+//		System.out.println(this.soldiers);
 		this.count       = Math.abs(c);
 		this.iterations = Math.abs(i);
 	}
