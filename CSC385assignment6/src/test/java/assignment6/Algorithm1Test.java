@@ -231,24 +231,6 @@ public class Algorithm1Test {
         assertEquals(expected,actual);
     }
 
-    @Test
-    public void testAlgorithm16(){
-        int actual;
-        int p = 0;//min int
-        int c = 0;
-        int i = 0;//min int -1
-        int expected = 1;//max int
-
-        try {
-            actual = runWithTestParamAlg1(p, c, i);
-
-        }catch (Exception e){
-            assertTrue(true);
-            return;
-        }
-        assertTrue(false);
-    }
-
 
 
 
