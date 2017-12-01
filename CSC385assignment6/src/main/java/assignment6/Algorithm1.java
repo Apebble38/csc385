@@ -24,7 +24,7 @@ public class Algorithm1 extends JosephusCircle {
 		java.util.LinkedList<Integer> alive = new java.util.LinkedList<Integer>();
 		
 		for (int i = 1; i <= this.soldiers; i++) alive.add(i);
-
+		//System.out.println(this.soldiers);
 		int index = 0;
 		while (alive.size() > 1)
 		alive.remove(index = (index + count - 1) % alive.size());
