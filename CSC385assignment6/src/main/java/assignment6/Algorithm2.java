@@ -22,7 +22,7 @@ public class Algorithm2 extends JosephusCircle {
 	@Override
 	public int algorithm() {
 		this.lastManStanding = algorithm(this.soldiers, this.count);
-		return this.lastManStanding;	
+		return this.lastManStanding;
 	}
 	
 	/**
