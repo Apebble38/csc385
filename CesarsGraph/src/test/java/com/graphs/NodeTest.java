@@ -19,9 +19,6 @@ public class NodeTest {
             new Node("/wiki/Doug_Lea"), new Node("/wiki/One-word-at-a-time"),null};
 
 
-
-
-
     @BeforeClass
     public static void setUpClass() {
         //this is where you create the class under test
@@ -95,7 +92,7 @@ public class NodeTest {
     }
 
 
-//***********findSiimilarity***********************
+//***********findSimilarity***********************
     @Test
     public void tc8(){
         BigDecimal expected = new BigDecimal(.66).setScale(2,RoundingMode.HALF_UP);
@@ -109,6 +106,7 @@ public class NodeTest {
     @Test
     public void tc9(){
         BigDecimal expected = new BigDecimal(0).setScale(2,RoundingMode.HALF_UP);
+        System.out.println(testNodes[2].findSimilarity(testNodes[0])); //prints NaN, verifying tc is correct
         BigDecimal actual = new BigDecimal(testNodes[2].findSimilarity(testNodes[0]));
 
         actual = actual.setScale(2, RoundingMode.HALF_UP);
@@ -122,21 +120,16 @@ public class NodeTest {
         actual = actual.setScale(2, RoundingMode.HALF_UP);
         assertEquals(expected,actual);
     }
-    @Test
-    public void tc11(){
-        try{
-       testNodes[2].findSimilarity(testNodes[2]);
-        }catch (Exception e){
-            assertTrue(true);
-        }
-        assertTrue(false);
 
+    @Test(expected = Exception.class)
+    public void tc11(){
+       testNodes[2].findSimilarity(testNodes[4]);
     }
 
     @Test
     public void tc14(){
         BigDecimal expected = new BigDecimal(.86).setScale(2,RoundingMode.HALF_UP);
-        BigDecimal actual = new BigDecimal(testNodes[1].findSimilarity(testNodes[2]));
+        BigDecimal actual = new BigDecimal(testNodes[2].findSimilarity(testNodes[1]));
 
         actual = actual.setScale(2, RoundingMode.HALF_UP);
         assertEquals(expected,actual);
